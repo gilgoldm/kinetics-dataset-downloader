@@ -278,7 +278,7 @@ class KineticsDatasetManager(object):
 				# use quotation to cater for special charaters such as whitesspace and () in file or folder name
 				# REF: https://stackoverflow.com/q/22766111/3901871
 				# REF: zsnhttps://ffmpeg.org/ffmpeg-utils.html#toc-Examples
-				os.system("ffmpeg "+self.show_log_cmd+" -ss "+start_time+" -i $(youtube-dl -f 18 --get-url "+youtube_link+") -t 10 -c:v copy -c:a copy '"+vid_path+"'")
+				os.system("ffmpeg "+self.show_log_cmd+" -ss "+start_time+" -i $(yt-dlp -f 18 --get-url "+youtube_link+") -t 10 -c:v copy -c:a copy '"+vid_path+"'")
 				video_counter +=1
 				
 			else:

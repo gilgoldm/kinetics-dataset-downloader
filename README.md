@@ -10,19 +10,14 @@ This script downloads the Kinetics-400, 600 or 700 dataset according to author g
 
 # Pre·req·ui·sites ( dependencies )
 
-- [X] Environment: Ubuntu 16.04 (This is some-what irrelevant but worth mentioning)
+- [X] Environment: Ubuntu 22.04 (This is some-what irrelevant but worth mentioning)
 
 - [X]  Python 3
 
-- [X]  tqdm
-```
-pip3 install tqdm
-```
+- [X]  tqdm, yt-dlp, natsort
 
-- [X] youtube-dl
 ```
-sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
-sudo chmod a+rx /usr/local/bin/youtube-dl
+pip install - r requirements.txt
 ```
 
 - [X] ffmpeg
